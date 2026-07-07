@@ -8,47 +8,16 @@ Observations show that the solar high-latitude m=1 unstable mode depends on cycl
 
 *Paper currently unpublished — citation/link will be added upon publication.*
 
-## Repository structure
+## Contents
 
-```
-.
-├── simulation/
-│   └── spherical-2d-hydro.py      # 2D spherical hydrodynamic simulation (linear, barotropic instability)
-├── postprocessing/
-│   ├── plot_spherical_hovmoller.py    # Hovmöller diagrams
-│   ├── plot_spherical_surface.py      # 3D globe / Mollweide projections
-│   └── make_movie.py                  # ffmpeg wrapper for animations
-├── input.json                     # Simulation parameters (A, B, C, ℓ, m, resolution, etc.)
-├── videos/                        # Rendered animations of the unstable mode
-└── README.md
-```
+- Simulation script(s) — 2D spherical hydrodynamic linear model of the m=1 Rossby mode
+- Postprocessing scripts — surface/Mollweide plots, video generation
+- `input.json` — simulation parameters (A, B, C, ℓ, m, resolution, etc.)
+- Video files — animations of the unstable mode
 
 ## Requirements
 
-- Python 3.10+
-- [Dedalus v3](https://dedalus-project.org/) (install via conda-forge)
-- numpy, scipy, matplotlib, h5py
-- ffmpeg (for `make_movie.py`)
-
-```bash
-conda create -n rossby-m1 -c conda-forge python=3.10 dedalus
-conda activate rossby-m1
-pip install numpy scipy matplotlib h5py
-```
-
-## Usage
-
-```bash
-# Run the simulation (parameters set in input.json)
-python simulation/spherical-2d-hydro.py input.json
-
-# Generate a Hovmöller diagram
-python postprocessing/plot_spherical_hovmoller.py --input <output_file>
-
-# Generate a surface/Mollweide animation frame set, then compile to video
-python postprocessing/plot_spherical_surface.py --input <output_file>
-python postprocessing/make_movie.py --frames <frame_dir> --out videos/output.mp4
-```
+- Python 3.10+, [Dedalus v3](https://dedalus-project.org/), numpy, scipy, matplotlib, h5py, ffmpeg
 
 ## License
 
