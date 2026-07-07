@@ -1,0 +1,29 @@
+{
+"m": 1
+,
+"n": 3
+,
+"s2": 0.15
+,
+"s4": 0.17
+,
+"R": 1
+,
+"beta_sq": 0
+,
+"Nmu": 256
+,
+"IC_amp": 1e-4
+,
+"mu_center": 0.0
+,
+"mu_width": 0.2
+,
+"stop_sim_time": 1000
+,
+"max_timestep": 0.01
+,
+"run_name": "test"
+,
+"ic_name": "none"
+}
