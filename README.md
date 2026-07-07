@@ -12,7 +12,7 @@ Observations show that the solar high-latitude m=1 unstable mode depends on cycl
 
 - Simulation script(s) — 2D spherical hydrodynamic linear model of the m=1 Rossby mode
 - Postprocessing scripts — surface/Mollweide plots, video generation
-- `input.json` — simulation parameters (A, B, C, ℓ, m, resolution, etc.)
+- `input_spherical.json` — simulation parameters (A, B, C, ℓ, m, resolution, etc.)
 - Video files — animations of the unstable mode
 
 ## Requirements
